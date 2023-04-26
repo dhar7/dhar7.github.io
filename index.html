@@ -49,25 +49,37 @@
 	<meta charset="UTF-8">
 	<title>My Bio</title>
 	<style>
-		.column {
+		body, html {
+			height: 100%;
+			margin: 0;
+			padding: 0;
+		}
+		.container {
 			display: flex;
+			height: 100%;
 		}
 		.left {
-			flex-basis: 60%;
-			max-height: 50%
+			flex-basis: 40%;
+			max-width: 50%;
 			padding-right: 20px;
+			height: 50%;
 		}
 		.right {
-			flex-basis: 40%;
+			flex-basis: 60%;
 			padding-left: 20px;
-			max-height: 50%
+			height: 50%;
+		}
+		img {
+			height: 100%;
+			max-width: 100%;
+			object-fit: cover;
 		}
 	</style>
 </head>
 <body>
-	<div class="column">
+	<div class="container">
 		<div class="left">
-			<img src="dhar.jpg" alt="My Image">
+			<img src="my_image.jpg" alt="My Image">
 		</div>
 		<div class="right">
 			<h1>My Bio</h1>
@@ -77,3 +89,4 @@
 	</div>
 </body>
 </html>
+
